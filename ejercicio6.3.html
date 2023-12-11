@@ -1,0 +1,22 @@
+<!--
+ Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete mostrar el mensaje 'Promocionado'   
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1 de condicional simple</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let nota1, nota2, nota3, promedio;
+            nota1 = parseInt(prompt('Ingresar primer nota: '));
+            nota2 = parseInt(prompt('Ingresar segunda nota: '));
+            nota3 = parseInt(prompt('Ingresar tercer nota: '));
+            promedio = (nota1 + nota2 + nota3)/3
+            if (promedio > 7){
+                document.write('El promedio de las notas es mayor a 7 y está aprobado')
+            }
+        </script>
+    </body>
+</html>

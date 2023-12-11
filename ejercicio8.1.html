@@ -1,0 +1,30 @@
+<!--
+Confeccionar un programa que pida por teclado tres notas de un alumno, calcule el promedio e imprima alguno de estos mensajes:
+Si el promedio es >=7 mostrar "Promocionado".
+Si el promedio es >=4 y <7 mostrar "Regular".
+Si el promedio es <4 mostrar "Reprobado".
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo de condicional anidada</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let nota1, nota2, nota3, promedio;
+            nota1 = parseInt(prompt('Ingresar primer número: '));
+            nota2 = parseInt(prompt('Ingresar segundo número: '));
+            nota3 = parseInt(prompt('Ingresar tercer número: '));
+            promedio = (nota1 + nota2 + nota3)/3;
+            if (promedio >= 7){
+                document.write('Promocionado');
+            } else
+                if (promedio < 4){
+                    document.write('Reprobado');
+                } else {
+                    document.write('Regular');
+                }
+        </script>
+    </body>
+</html>

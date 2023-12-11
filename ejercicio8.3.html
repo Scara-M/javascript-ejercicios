@@ -1,0 +1,24 @@
+<!--
+Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 2 de estructura condicional anidadas</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let num;
+            num = parseInt(prompt('Ingrese un número: '));
+            if (num > 0){
+                document.write('El número ingresado es positivo');
+            }else
+                if (num == 0){
+                    document.write('El número ingresado es cero');
+                } else {
+                    document.write('El número ingresado es negativo');
+                }
+        </script>
+    </body>
+</html>

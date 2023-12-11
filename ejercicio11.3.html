@@ -1,0 +1,33 @@
+<!--
+Solicitar el ingreso alguna de estas palabras (casa, mesa, perro, gato) luego mostrar la palabra traducida en inglés. Es decir, si se ingresa 'casa' debemos mostrar el texto 'house' en la página.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio de estructura switch</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let palabra;
+            palabra = prompt('Ingrese la palabra casa, mesa, perro o gato: ');
+
+            switch (palabra){
+                case 'casa':
+                    document.write('House');
+                    break;
+                case 'mesa':
+                    document.write('Table');
+                    break;
+                case 'perro':
+                    document.write('Dog');
+                    break;
+                case 'gato':
+                    document.write('Cat');
+                    break;
+                default:
+                    document.write('No se ingreso la palabra correcta');
+            }
+        </script>
+    </body>
+</html>

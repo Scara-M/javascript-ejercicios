@@ -1,0 +1,25 @@
+<!-- 
+Realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad (se debe cargar por separado el dia, el mes y el año)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1 de operador lógico &&</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let dia, mes, año;
+            dia = prompt('Ingresar día: ');
+            mes = prompt('Ingresar mes: ');
+            anio = prompt('Ingresar anio: ');
+
+            //Determinar condición
+            if (dia == 25 && mes == 12){
+                document.write('La fecha ingresada corresponde a una fecha de Navidad');
+            } else {
+                document.write('La fecha ingresada no corresponde a una fecha de navidad');
+            }
+        </script>
+    </body>
+</html>

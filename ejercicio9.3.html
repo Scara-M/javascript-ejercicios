@@ -1,0 +1,25 @@
+<!--
+Se ingresan tres valores por teclado, si todos son iguales se imprime la suma del primero con el segundo y a este resultado se lo multiplica por el tercero (tener en cuenta que puede haber tres condiciones simples)
+-->
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Ejercicio 3 de condicional &&</title>
+            <meta charset="UTF-8">
+        </head>
+        <body>
+            <script>
+                let num1, num2, num3;
+                num1 = parseInt(prompt('Ingresar primer valor: '));
+                num2 = parseInt(prompt('Ingresar segundo valor: '));
+                num3 = parseInt(prompt('Ingresar tercer valor: '));
+                
+                //Comparar si son iguales
+                if (num1 == num2 && num1 == num3){
+                    operacion = (num1 + num2) * num3
+                    document.write('La suma de los dos primeros multiplicado por el tercero es ' + operacion);
+                }
+            </script>
+        </body>
+    </html>
+</DOCTYPE>

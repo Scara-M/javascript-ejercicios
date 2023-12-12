@@ -1,0 +1,36 @@
+<!--
+En una empresa trabajan 5 empleados cuyos sueldos oscilan entre $100 y $500, realizar un programa que lea los sueldos que cobra cada empleado e informe cuántos empleados cobran entre $100 y $300 y cuántos cobran más de $300. 
+Además el programa deberá informar el importe que gasta la empresa en sueldos al personal.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 3 de acumulador con while</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let sueldo, x, menor_300, mayor_300, importe_total;
+            importe_total = 0;
+            x = 1;
+            menor_300 = 0;
+            mayor_300 = 0;
+            while (x <= 5){
+                sueldo = parseFloat(prompt('Ingresar el sueldo del operario: '));
+                if (sueldo > 300){
+                    mayor_300 = mayor_300 + 1;
+                } else
+                    if (sueldo <= 300 && sueldo >= 100){
+                        menor_300 = menor_300 + 1;
+                    }
+                importe_total = importe_total + sueldo;
+                x = x + 1;
+            }
+            document.write('La cantidad de empleados que cobran un sueldo mayor a $300 son ' + mayor_300);
+            document.write('<br>');
+            document.write('La cantidad de empleados que cobran un sueldo entre $300 y $100 son ' + menor_300);
+            document.write('<br>');
+            document.write('El importe total que gasta la empresa sobre los empleados es ' + importe_total);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!--
+Realizar un programa que acumule (sume) valores ingresados por teclado hasta ingresa el 9999 (no sumar dicho valor, solamente indica que ha finalizado la carga). Imprimir el valor acumulado e informar si dicho valor es cero, mayor a cero o menor a cero.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1 de estructura do/while</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            // Acumular los valores distintos a 9999
+            let num, acum;
+            acum = 0;
+            do{
+                num = parseInt(prompt('Ingresar un número: '));
+                if (num != 9999){
+                    acum = acum + num;
+                }
+            } while(num != 9999);
+            document.write('El valor acumulado es ' + acum);
+            document.write('<br>');
+
+            // Determinar si el valor acumulado es cero, mayor o menor
+            if (acum > 0){
+                document.write('El valor acumulado es mayor a cero');
+            } else {
+                if (acum < 0) {
+                    document.write('El valor acumulado es menor a cero');
+                } else{
+                    document.write('El valor acumulado es cero');
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!--
+Realizar un programa que lea los lados de 4 triángulos, e informar:
+a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales), isósceles (dos lados iguales), o escaleno (ningún lado igual)
+b) Cantidad de triángulos de cada tipo.
+c) Tipo de triángulo del que hay menor cantidad.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 5 de estructura repetitiva for</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let lado1, lado2, lado3;
+            let cant_equilatero = 0;
+            let cant_isosceles = 0;
+            let cant_escaleno = 0;
+
+            for (f = 1; f <= 4; f++){
+                lado1 = parseInt(prompt('Ingresar primer lado del triángulo: '));
+                lado2 = parseInt(prompt('Ingresar segundo lado del triángulo: '));
+                lado3 = parseInt(prompt('Ingresar tercer lado del triángulo: '));
+
+                // Determinar tipo de triángulo
+                if (lado1 == lado2 && lado1 == lado3){
+                    document.write('El triángulo ' + f + ' es equilátero' + '<br>');
+                    cant_equilatero = cant_equilatero + 1;
+                } else {
+                    if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
+                        document.write('El triángulo ' + f + ' es isósceles' + '<br>');
+                        cant_isosceles = cant_isosceles + 1;
+                    } else{
+                        document.write('El triángulo ' + f + ' es escaleno' + '<br>');
+                        cant_escaleno = cant_escaleno + 1;
+                    }
+                }
+            }
+            document.write('<br>');
+            document.write('Cantidad de triángulos equiláteros ' + cant_equilatero + '<br>');
+            document.write('Cantidad de triángulos isosceles ' + cant_isosceles + '<br>');
+            document.write('Cantidad de triángulos escalenos ' + cant_escaleno + '<br>');
+            // Determinar que tipo de triangulo hay de menor cantidad
+            if (cant_equilatero < cant_isosceles && cant_equilatero < cant_escaleno){
+                document.write('Hay menor cantidad de triángulos equiláteros');
+            } else{
+                if (cant_isosceles < cant_escaleno){
+                    document.write('Hay menor cantidad de triángulos isosceles');
+                } else{
+                    document.write('Hay menor cantidad de triángulos escalesnos');
+                }
+            }
+        </script>
+    </body>
+</html>

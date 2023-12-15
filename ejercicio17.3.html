@@ -1,0 +1,54 @@
+<!--
+Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 de funciones con parámetros</title>
+</head>
+<body>
+    <script>
+        function ordernar(x1, x2, x3){
+            if (x1 < x2 && x1 < x3){
+                menor = x1;
+                if (x2 < x3){
+                    medio = x2;
+                    mayor = x3;
+                } else{
+                    medio = x3;
+                    mayor = x2;
+                }
+            } else {
+                if (x2 < x3){
+                    menor = x2;
+                    if (x3 < x1){
+                        medio = x3;
+                        mayor = x1;
+                    } else{
+                        medio = x1;
+                        mayor = x3;
+                    }
+                } else{
+                    menor = x3;
+                    if (x1 < x2){
+                        medio = x1;
+                        mayor = x2;
+                    } else{
+                        medio = x2;
+                        mayor = x1;
+                    }
+                }
+            }
+        document.write('Menor: ' + menor + ' - Medio: ' + medio + ' - Mayor: ' + mayor);
+        }
+
+        // Llamada a funcion
+        valor1 = parseInt(prompt('Ingresar primer número: '));
+        valor2 = parseInt(prompt('Ingresar segundo número: '));
+        valor3 = parseInt(prompt('Ingresar tercer número: '));
+        ordernar(valor1, valor2, valor3);
+    </script>
+</body>
+</html>

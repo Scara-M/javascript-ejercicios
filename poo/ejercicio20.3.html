@@ -1,0 +1,94 @@
+<!--Confeccionar una función que nos retorne un string con el siguiente formato:
+Hoy es Lunes 9 de Agosto de 2021
+Para poder recuperar el día de la semana debemos llamar al método:
+
+let diaSemana=fecha.getDay();
+El método getDay() devuelve el día de la semana de la fecha especificada, siendo 0 (Domingo) el primer día.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function devolverFecha (){
+            let fecha;
+            fecha = new Date();
+            let diaSemana = fecha.getDay();
+            let mes = fecha.getMonth();
+            let ano = fecha.getFullYear();
+            
+            switch (diaSemana){
+                case 0:
+                    dia = 'Domingo';
+                    break;
+                case 1:
+                    dia = 'Lunes';
+                    break;
+                case 2:
+                    dia = 'Martes';
+                    break;
+                case 3:
+                    dia = 'Miércoles';
+                    break;
+                case 4:
+                    dia = 'Jueves';
+                    break;
+                case 5:
+                    dia = 'Viernes';
+                    break;
+                case 6:
+                    dia = 'Sábado';
+                    break;
+            }
+
+            switch (mes) {
+                case 0:
+                    m = 'Enero';
+                    break;
+                case 1:
+                    m = 'Febrero';
+                    break;
+                case 2:
+                    m =  'Marzo';
+                    break;
+                case 3:
+                    m = 'Abril';
+                    break;
+                case 4:
+                    m = 'Mayo';
+                    break;
+                case 5:
+                    m = 'Junio';
+                    break;
+                case 6:
+                    m = 'Julio';
+                    break;
+                case 7:
+                    m =  'Agosto';
+                    break;
+                case 8:
+                    m =  'Septiembre';
+                    break;
+                case 9:
+                    m =  'Octubre';
+                    break;
+                case 10:
+                    return 'Noviembre';
+                    break;
+                case 11:
+                    m =  'Diciembre';
+                    break;
+            }
+
+            //Hoy es Lunes 9 de Agosto de 2021
+            document.write('Hoy es ', dia, ' ', diaSemana, ' de ', m, ' de ', ano);
+        }
+
+        // bloque
+        devolverFecha()
+    </script>
+</body>
+</html>

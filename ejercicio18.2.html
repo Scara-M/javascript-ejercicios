@@ -1,0 +1,46 @@
+<!--Confeccionar una función que reciba una fecha con el formato de día, mes y año y retorne un string con un formato similar a: "Hoy es 27 de enero de 2025".-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertirFecha(dia,mes,ano){
+            
+            switch(mes){
+                case 1:
+                    m = 'enero';
+                case 2:
+                    m = 'febrero';
+                case 3:
+                    m = 'marzo';
+                case 4:
+                    m = 'abril';
+                case 5:
+                    m = 'mayo';
+                case 6:
+                    m = 'junio';
+                case 7:
+                    m = 'julio';
+                case 8:
+                    m = 'agosto';
+                case 9:
+                    m = 'septiembre';
+                case 10:
+                    m = 'octubre';
+                case 11:
+                    m = 'noviembre';
+                case 12:
+                    m = 'diciembre';
+            }
+            cad = 'Hoy es ' + dia + ' de '+ m + ' de ' + ano;
+            return cad;
+        }
+
+        document.write(convertirFecha(27,1,2025));
+    </script>
+</body>
+</html>

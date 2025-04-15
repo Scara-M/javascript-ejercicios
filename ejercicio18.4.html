@@ -1,0 +1,21 @@
+<!--Elaborar una función a la cual le envíe el valor del lado de un cuadrado y me retorne su perímetro.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularPerimetro(lado){
+            perimetro = lado * 4
+            return perimetro
+        }
+
+        // bloque
+        let la = parseInt(prompt('Ingrese lado del cuadrado: '))
+        document.write('El valor del perimetro del cuadrado es ', calcularPerimetro(la))
+    </script>
+</body>
+</html>

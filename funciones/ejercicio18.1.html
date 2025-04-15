@@ -1,0 +1,34 @@
+<!--Confeccionar una función que reciba un valor entero comprendido entre 1 y 5. Luego retornar en castellano el valor recibido.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarNumero(num){
+            switch (num){
+                case 1:
+                    return 'Uno'
+                case 2:
+                    return 'Dos'
+                case 3:
+                    return 'Tres'
+                case 4:
+                    return 'Cuatro'
+                case 5:
+                    return 'Cinco'
+                default:
+                    return 'Valor incorrecto'
+            }
+        }
+
+
+        //bloque
+        let num = parseInt(prompt('Elija un número entre 1 y cinco: '))
+        document.write(mostrarNumero(num))
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!--
+Confeccionar una función que solicite el ingreso de un entero y nos muestre la tabla de multiplicar de dicho valor. Llamar luego una vez a la función.
+-->
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo 2 de funciones con javascript</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            function mostrarTabla(){
+                let num;
+                num = parseInt(prompt('Ingresar número entero: '));
+                for (let f = 1; f <= 10; f++){
+                    let tabla = f * num;
+                    document.write(f + " * " + num + " = " + tabla + '<br>');
+                }
+            };
+
+        
+            //Salida por pantalla
+            mostrarTabla();
+        </script>
+    </body>
+</html>

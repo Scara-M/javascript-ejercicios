@@ -1,0 +1,34 @@
+<!--
+Ejemplo 1: Crear un vector para almacenar los cinco sueldos de operarios y luego mostrar el total de gastos en sueldos (cada actividad en una función)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cargarSueldos(sueldos){
+            for(let f = 0; f < sueldos.length; f++){
+                let v = parseFloat(prompt('Ingrese sueldo: '))
+                sueldos[f] = v;
+            }
+        }
+
+        function calcularTotal(sueldos){
+            let total = 0
+            for(let f = 0; f < sueldos.length; f++){
+                total += sueldos[f];
+            }
+            document.write('El total de los sueldos es ', total);
+        }
+        //principal
+        let sueldos;
+        sueldos = new Array(5);
+        cargarSueldos(sueldos);
+        calcularTotal(sueldos);
+    </script>
+</body>
+</html>

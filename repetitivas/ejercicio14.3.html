@@ -1,0 +1,45 @@
+<!--
+En un banco se procesan datos de las cuentas corrientes de sus clientes. De cada cuenta corriente se conoce: número de cuenta, nombre del cliente y saldo actual. El ingreso de datos debe finalizar al ingresar un valor negativo en el número de cuenta.
+Se pide confeccionar un programa que lea los datos de las cuentas corrientes e informe:
+a) De cada cuenta: número de cuenta, nombre del cliente y estado de la cuenta según su saldo, sabiendo que:
+Estado de la cuenta	'Acreedor' si el saldo es >0.
+			'Deudor' si el saldo es <0.
+			'Nulo' si el saldo es =0.
+b) La suma total de los saldos acreedores.
+-->
+<DOCTYPE html>
+<html>
+    <head>
+       <title>Ejercicio 2 de estructura repetitiva do/while</title>
+       <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <script>
+            let num, nombre, saldo;
+
+            do{
+                num = parseInt(prompt('Ingresar el número de la cuenta: '));
+                if (num > 0){
+                nombre = prompt('Ingresar el nombre del cliente: ');
+                saldo = parseInt(prompt('Ingresar el saldo actual del cliente: '));
+
+                // Salida por pantalla de cada cuenta
+                document.write('Cliente: ' + nombre + ' - Número de cuenta: ' + num);
+                document.write('<br>');
+
+                // Determinar estado de la cuenta
+                if (saldo > 0){
+                    document.write('El cliente es acreedor');
+                } else{
+                    if (saldo < 0){
+                        document.write('El cliente es deudor');
+                    } else {
+                        document.write('El cliente es nulo');
+                    }
+                } 
+                document.write('<br>');
+            }
+            }while(num > 0);
+        </script>
+    </body>
+</html>

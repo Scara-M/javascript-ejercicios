@@ -1,0 +1,27 @@
+<!--
+Realizar un programa que lea cuatro valores numéricos e informar su suma y producto.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 3 de estructura secuencial</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let num1, num2, num3, num4;
+            num1 = parseInt(prompt('Ingresar primer número: '));
+            num2 = parseInt(prompt('Ingresar segundo número: '));
+            num3 = parseInt(prompt('Ingresar tercer número: '));
+            num4 = parseInt(prompt('Ingresar cuarto número: '));
+            let suma, producto;
+            suma = num1 + num2 + num3 + num4;
+            producto = num1 * num2 * num3 * num4;
+            document.write('La suma de los cuatro valores es ');
+            document.write(suma);
+            document.write('<br>')
+            document.write('El producto de los cuatro números es ');
+            document.write(producto);
+        </script>
+    </body>
+</html>

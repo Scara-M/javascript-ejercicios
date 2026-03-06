@@ -1,0 +1,30 @@
+<!--
+Desarrollar un programa que permita cargar 5 números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 7 de acumulador con while</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let num, pares, impares;
+            pares = 0;
+            impares = 0;
+            x = 1;
+            while (x <= 5){
+                num = parseInt(prompt('Ingresar valor entero: '));
+                if (num % 2 == 0){
+                    pares = pares + 1;
+                } else{
+                    impares = impares + 1;
+                }
+                x = x + 1;
+            }
+            document.write('La cantidad de pares son ' + pares);
+            document.write('<br>');
+            document.write('La cantidad de impares son ' + impares);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!--
+Desarrollar un programa que solicite la carga de 10 números e imprima la suma de lo últimos 5 valores ingresados.
+-->
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 2 estructura repetitiva for</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let num;
+            let suma = 0;
+
+            for (let f = 1; f <=10; f++){
+                num = parseInt(prompt('Ingresar número: '));
+                
+                if (f > 5){
+                    suma = suma + num;
+                }
+            }
+            document.write('La suma de los últimos cinco valores ingresados es ' + suma);
+        </script>
+    </body>
+</html>

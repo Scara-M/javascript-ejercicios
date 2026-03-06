@@ -1,0 +1,34 @@
+<!--
+Escribir un programa que pida ingresar la coordenada de un punto en el plano, es decir dos valores enteros x e y.
+Posteriormente imprimir en pantalla en qué cuadrante se ubica dicho punto. (1º Cuadrante si x > 0 Y y > 0 , 2º Cuadrante: x < 0 Y y > 0, etc.)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 5 de operador lógico &&</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let x, y;
+            x = parseInt(prompt('Ingresar coordenada x: '));
+            y = parseInt(prompt('Ingresar coordenada y: '));
+
+            // Determinar punto en el plano
+            if (x > 0 && y > 0) {
+                document.write('El punto se encuentra en el primer cuadrante');
+            } else
+                if (x < 0 && y > 0){
+                    document.write('El punto se encuentra en el segundo cuadrante');
+                } else
+                    if (x < 0 && y < 0){
+                        document.write('El punto se encuentra en el tercer cuadrante');
+                    } else
+                        if (x > 0 && y < 0){
+                            document.write('El punto se encuentra en el cuarto cuadrante');
+                        } else{
+                            document.write('El punto es el origen del plano')
+                        }
+        </script>
+    </body>
+</html>

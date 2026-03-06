@@ -1,0 +1,37 @@
+<!--
+Confeccionar un programa que solicite que ingrese un valor entre 1 y 5. Luego mostrar en castellano el valor ingresado. Mostrar un mensaje de error en caso de haber ingresado un valor que no se encuentre en dicho rango.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo de estructura switch </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let valor;
+            valor = parseInt(prompt('Ingrese un valor: '));
+
+
+            switch (valor){
+                case 1:
+                    document.write('Uno');
+                    break;
+                case 2:
+                    document.write('Dos');
+                    break;
+                case 3:
+                    document.write('Tres');
+                    break;
+                case 4:
+                    document.write('Cuatro');
+                    break;
+                case 5:
+                    document.write('Cinco');
+                    break;
+                default:
+                    document.write('El valor ingresado no es entre 1 y 5');
+            }
+        </script>
+    </body>
+</html>

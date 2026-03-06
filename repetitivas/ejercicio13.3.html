@@ -1,0 +1,23 @@
+<!--Se ingresan un conjunto de 5 alturas de personas por teclado. Mostrar la altura promedio de las personas.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 2 de acumulador con while</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let altura, acum;
+            acum = 0;
+            x = 1;
+            while (x <= 5) {
+                altura = parseFloat(prompt('Ingrese la altura de la persona: '));
+                acum = acum + altura;
+                x = x + 1;
+            }
+            let promedio;
+            promedio = acum/5;
+            document.write('La altura promedio es ' + promedio);
+        </script>
+    </body>
+</html>

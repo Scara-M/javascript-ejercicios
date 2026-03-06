@@ -1,0 +1,25 @@
+<!--
+Se ingresan por teclado tres números, si al menos uno de los valores ingresados es menores a 10, imprimir en la página la leyenda 'Alguno de los números es menor a diez'.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1 de operador lógico ||</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let num1, num2, num3;
+            num1 = parseInt(prompt('Ingresar primer número: '));
+            num2 = parseInt(prompt('Ingresar segundo número: '));
+            num3 = parseInt(prompt('Ingresar tercer número: '));
+
+            // Determinar si son menores a 10
+            if (num1 < 10 || num2 < 10 || num3 < 10){
+                document.write('Hay al menos un valor ingresado que es menor a 10');
+            } else {
+                document.write('Los valores ingresados son mayores a 10');
+            }
+        </script>
+    </body>
+</html>

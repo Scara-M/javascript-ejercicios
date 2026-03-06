@@ -1,0 +1,53 @@
+<!--
+Se realizó un censo provincial y se desea procesar la información obtenida en dicho censo. De cada una de las personas censadas se tiene la siguiente información: número de documento, edad y sexo ('femenino' o 'masculino')
+Se pide confeccionar un programa que lea los datos de cada persona censada (para finalizar ingresar el valor cero en el número de documento) e informar:
+ 
+a)	Cantidad total de personas censadas.
+b)	Cantidad de varones.
+c)	Cantidad de mujeres.
+d)	Cantidad de varones cuya edad varía entre 16 y 65 años.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 3 de estructura do/while</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let dni, edad, sexo;
+            let cant_personas = 0;
+            let cant_varones = 0;
+            let cant_mujeres = 0;
+            let cant_varones_edad = 0;
+
+            do{
+                dni = parseInt(prompt('Ingresar el dni de la persona: '));
+                if (dni > 0){
+                edad = parseInt(prompt('Ingresar la edad de la personas: '));
+                sexo = prompt('Ingresar su sexo: ');
+
+                cant_personas = cant_personas + 1;
+
+                // Determinar si es varon o mujer
+                if (sexo == 'masculino'){
+                    cant_varones = cant_varones + 1;
+                    if (edad >= 16 && edad <= 65 );
+                        cant_varones_edad = cant_varones_edad + 1;
+                } else{
+                    cant_mujeres = cant_mujeres + 1;
+                }
+                }
+            }while(dni != 0);
+            
+            // Salida por pantalla
+            document.write('Cantidad de personas censadas: ' + cant_personas);
+            document.write('<br>');
+            document.write('Cantidad de varones ' + cant_varones);
+            document.write('<br>');
+            document.write('Cantidad de mujeres ' + cant_mujeres);
+            document.write('<br>');
+            document.write('Cantidad de varones entre 16 y 65 años ' + cant_varones_edad);
+        </script>
+    </body>
+</html>

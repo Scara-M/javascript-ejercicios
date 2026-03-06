@@ -1,0 +1,23 @@
+<!--
+Desarrollar un programa que permita la carga de 5 valores por teclado y nos muestre posteriormente la suma.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo de acumulador</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let valor, x;
+            let suma = 0;
+            x = 1;
+            while (x <= 5){
+                valor = parseInt(prompt('Ingrese un número: '));
+                suma = suma + valor;
+                x = x + 1;
+            } 
+            document.write('La suma de los valores es ' + suma);
+        </script>
+    </body>
+</html>

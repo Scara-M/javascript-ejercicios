@@ -1,0 +1,30 @@
+<!--
+Escribir un programa que lea 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.
+-->
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1 de acumulador con while</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let nota, mayor, menor;
+            mayor = 0;
+            menor = 0;
+            x = 1;
+            while (x <= 10){
+                nota = parseInt(prompt('Ingresar nota: '));
+                if (nota >= 7){
+                    mayor = mayor + 1;
+                } else{
+                    menor = menor + 1;
+                }
+                x = x + 1;
+            }
+            document.write('La cantidad de alumnos que obtuvieron nota mayor o igual a 7 son ' + mayor);
+            document.write('<br>');
+            document.write('La cantidad de alumnos que obtuvieron nota menor a 7 son ' + menor);
+        </script>
+    </body>
+</html>

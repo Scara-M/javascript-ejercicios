@@ -1,0 +1,25 @@
+<!--
+Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 3 de condicional anidada</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let num;
+            num = parseInt(prompt('Ingresar un número: '));
+
+            if (num < 10) {
+                document.write('El número tiene un dígito')
+            } else 
+                if (num < 100){
+                    document.write('El número tiene dos dígitos');
+                } else {
+                    document.write('Tiene 3 dígitos');
+                }
+        </script>
+    </body>
+</html>

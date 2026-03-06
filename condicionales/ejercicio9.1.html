@@ -1,0 +1,28 @@
+<!--
+Confeccionar un programa que lea por teclado tres números distintos y nos muestre el mayor de ellos
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo de operador lógico  &&</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let num1, num2, num3;
+            num1 = parseInt(prompt('Ingrese el primer número: '));
+            num2 = parseInt(prompt('Ingrese el segundo número: '));
+            num3 = parseInt(prompt('Ingrese el tercer número: '));
+            
+            // Determinar el mayor
+            if (num1 > num2 && num1 > num3){
+                document.write('El mayor es el primer número');
+            } else
+                if (num2 > num3){
+                    document.write('El mayor es el segundo número');
+                } else {
+                    document.write('El mayor es el tercer número');
+                }
+        </script>
+    </body>
+</html>
